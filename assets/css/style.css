@@ -293,21 +293,18 @@ li{
 
   #sezioneAside {
     width: 350px;
-    padding: 5%;
-    position: sticky;
-    top: 0; 
-
+    padding: 60px;
+    
 }
   
   #sezioneAside .DiscorverDx {
     border-bottom: solid 1px black;
   }
-  .DiscorverDx{
-    display: flex;
 
-  }
   .DiscorverDx div {
     margin-bottom: 1em;  
+  
+
   }
 
 .bottoniGrey{
@@ -336,4 +333,5 @@ li{
     color: gray;
     display: flex;
     flex-wrap: wrap;
+   
 }
