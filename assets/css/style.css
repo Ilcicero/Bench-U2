@@ -12,6 +12,7 @@ h1{
     font-size: 3em;
     margin-right: auto;
     margin-bottom: 0.5em; 
+    font-weight: lighter;
 }
 
 
@@ -25,8 +26,28 @@ h1{
     margin-left: 150px;
     margin-right: auto;
 }
+.scrolled {
+    background-color: white;
+  }
 
-nav {
+
+/* CAMBIO COLORE NAVBAR */
+header {
+    position: sticky;
+    top: 0;
+    transition: background-color 0.9s ease-in-out;
+    z-index: 99;
+  }
+  
+header.scrolled {
+    background-color: white;
+  }
+
+
+  nav {
+    position: sticky;
+    top: 0;
+    transition: background-color 0.5s ease-in-out;
     display: flex;
     border-bottom: 1px solid black;
     background-color: #ffc017;
@@ -34,9 +55,17 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
+    
 }
-button{
-   
+
+button.scrolledB{
+    background-color: #1a8917;
+    color: black;
+    border: 1px solid #ffc017;
+}
+nav button{
+    height: 30px;
     border-radius: 2em;
     border-style: none;
     background-color: #191919;
@@ -44,11 +73,12 @@ button{
     margin-right: auto;
     font-size: 0.8em;
     padding: 5px 15px 5px 15px;
+    z-index: 99;
  
 }
 .caption button{
-    text-align: left;
-    width: 150px;
+    text-align: center;
+    width: 130px;
     height: 30px;
     border-radius: 2em;
     border-style: none;
@@ -262,11 +292,11 @@ li{
   }
 
   #sezioneAside {
-    width: 33%;
+    width: 350px;
     padding: 5%;
-    display: flex;
-    flex-direction: column;
-  position: sticky;
+    position: sticky;
+    top: 0; 
+
 }
   
   #sezioneAside .DiscorverDx {
@@ -274,10 +304,10 @@ li{
   }
   .DiscorverDx{
     display: flex;
+
   }
   .DiscorverDx div {
-    margin-bottom: 1em;
-    
+    margin-bottom: 1em;  
   }
 
 .bottoniGrey{
@@ -291,11 +321,12 @@ li{
     border: 1px solid grey;
     margin-top: 0.1em;
     border-radius: 3px;
+    padding: 0.5em;
     
   }
   
   .aiuto > button{
-
+ border-style: none;
   background-color: white;
   color: grey;
   }
